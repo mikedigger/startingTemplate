@@ -1,0 +1,18 @@
+@function px-to-rem($size) {
+	@return $size / $x-font-size * 1rem;
+}
+
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+	@return $number;
+}
+
+@function scale_size($min_size: 0, $max_size: 1, $min_vw: $page-min-width, $max-vw: $page-max-width) {
+	@return calc(#{$min_size} + #{strip-unit($max_size - $min_size)} * ((100vw - #{$min_vw}) / #{strip-unit($max-vw - $min_vw)}));
+}
+
+@function custom-clamp($min-val, $max-val, $min-screen: $page-min-width, $max-screen: $page-max-width) {
+	@return clamp($min-val, scale_size($min-val, $max-val, $min-screen, $max-screen), $max-val);
+}

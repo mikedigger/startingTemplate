@@ -1,0 +1,31 @@
+// %hover-line {
+// 	position: relative;
+// 	// &:hover {
+// 	// 	color: $accent-color;
+// 	// }
+
+// 	&::after {
+// 		content: '';
+// 		position: absolute;
+// 		left: 0;
+// 		bottom: 0;
+// 		width: 0;
+// 		height: 2px;
+// 		background: $base-color-light;
+// 		transition: $base-animation-speed;
+// 	}
+
+// 	&:hover:after {
+// 		width: 100%;
+// 	}
+// }
+
+// .full-width,
+// %full-width {
+// 	width: 100vw;
+// 	// position: relative;
+// 	left: 50%;
+// 	right: 50%;
+// 	margin-left: -50vw;
+// 	margin-right: -50vw;
+// }

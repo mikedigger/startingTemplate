@@ -1,0 +1,48 @@
+
+@mixin screen($size) {
+	$desktop: '(min-width: #{$breakpoint-desktop})';
+	$tablet: '(min-width: #{$breakpoint-tablet})';
+	$mobile: '(min-width: #{$breakpoint-mobile})';
+	@if $size == desktop {
+		@media only screen and #{$desktop} {
+			@content;
+		}
+	} @else if $size == tablet {
+		@media only screen and #{$tablet} {
+			@content;
+		}
+	} @else if $size == mobile {
+		@media only screen and #{$mobile} {
+			@content;
+		}
+	}
+}
+
+@mixin font-face($name, $type: 'Regular', $weight: 400, $style: normal, $path: '../fonts') {
+	@font-face {
+		font-weight: $weight;
+		font-style: $style;
+		font-family: quote($name);
+		src: url(#{$path}/#{$name}/#{$name}#{'-'}#{$type}#{'.woff2'});
+		// src: url(#{$path}/#{$name}/#{$name}#{'-'}#{$type}#{'.woff'});
+	}
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		opacity: 1;
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&.placeholder {
+		@content;
+	}
+}
