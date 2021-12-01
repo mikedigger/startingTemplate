@@ -46,8 +46,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'src/pug/index.pug'),
-			// inject: true,
-			// chunks: ['index'],
+			chunks: ['index'],
 			filename: 'index.html',
 			minify: {
 				collapseWhitespace: isProd,
@@ -70,6 +69,9 @@ module.exports = {
 		firewall: false,
 		port: 7000,
 		host: '127.0.0.1',
+		// multiple pages
+		// openPage: ['index.html', 'page2.html']
+		openPage: ['index.html']
 	},
 
 	module: {

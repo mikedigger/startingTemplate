@@ -11,11 +11,7 @@
     "rules": {
         "max-empty-lines": 1,
         "rule-empty-line-before": "always",
-        "block-closing-brace-empty-line-before":"always-multi-line",
-        "block-closing-brace-newline-after":"always-multi-line",
-        "block-opening-brace-newline-after": "always",
-        "block-closing-brace-newline-before": "always",
-        "block-opening-brace-space-before":"always",
+        "block-closing-brace-empty-line-before":"never",
         "indentation": "tab",
         "string-quotes": "single",
         "order/order": [
@@ -42,6 +38,7 @@
 [            {
                 "groupName": "position",
                 "emptyLineBefore": "always",
+                "noEmptyLineBetween": true,
                 "properties": [
                     "content",
                     "z-index",
@@ -57,6 +54,7 @@
             {
                 "groupName": "layout",
                 "emptyLineBefore": "always",
+                "noEmptyLineBetween": true,
                 "properties": [
                     "display",
                     "flex",
@@ -99,6 +97,7 @@
             {
                 "groupName": "box",
                 "emptyLineBefore": "always",
+                "noEmptyLineBetween": true,
                 "properties": [
                     "box-sizing",
                     "width",
@@ -171,6 +170,7 @@
             {
                 "groupName": "hide",
                 "emptyLineBefore": "always",
+                "noEmptyLineBetween": true,
                 "properties": [
                     "opacity",
                     "visibility"
@@ -270,7 +270,7 @@
                 ]
             }],
             {
-                "unspecified": "bottom",
+                "unspecified": "bottomAlphabetical",
                 "emptyLineBeforeUnspecified": "always"
             }
 

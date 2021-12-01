@@ -4,16 +4,6 @@ html {
 	left: 0;
 
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	width: 100%;
-	height: 100%;
-
-	overflow-x: hidden;
-
-	scroll-behavior: smooth;
-
 }
 
 body {
@@ -33,9 +23,7 @@ body {
 		width:100%;
 
 		overflow:hidden;
-
 	}
-
 }
 
 .container {
@@ -44,5 +32,4 @@ body {
 	max-width:$base-container-width;
 	padding:0 $base-container-padding;
 	margin:0 auto;
-
 }
