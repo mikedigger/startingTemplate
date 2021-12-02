@@ -7,29 +7,29 @@ html {
 }
 
 body {
-	margin:0 auto;
+	margin: 0 auto;
 
-	line-height:1.5;
+	line-height: 1.5;
 
-	overflow-x:hidden;
+	overflow-x: hidden;
 
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	overflow-anchor:none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-anchor: none;
 
 	&.is-fixed {
-		position:fixed;
+		position: fixed;
 
-		width:100%;
+		width: 100%;
 
-		overflow:hidden;
+		overflow: hidden;
 	}
 }
 
 .container {
-	position:relative;
+	position: relative;
 
-	max-width:$base-container-width;
-	padding:0 $base-container-padding;
-	margin:0 auto;
+	max-width: $base-container-width;
+	padding: 0 $base-container-padding;
+	margin: 0 auto;
 }
