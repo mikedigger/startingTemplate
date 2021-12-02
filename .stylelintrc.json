@@ -9,6 +9,13 @@
 	],
 
     "rules": {
+        "selector-list-comma-newline-after":"always",
+        "block-closing-brace-newline-before":"always",
+        "block-opening-brace-space-before":"always",
+        "block-opening-brace-newline-after":"always",
+        "declaration-block-trailing-semicolon": "always",
+        "declaration-block-semicolon-newline-after": "always",
+        "declaration-colon-space-after": "always",
         "max-empty-lines": 1,
         "rule-empty-line-before": "always",
         "block-closing-brace-empty-line-before":"never",
@@ -38,7 +45,6 @@
 [            {
                 "groupName": "position",
                 "emptyLineBefore": "always",
-                "noEmptyLineBetween": true,
                 "properties": [
                     "content",
                     "z-index",
@@ -54,7 +60,6 @@
             {
                 "groupName": "layout",
                 "emptyLineBefore": "always",
-                "noEmptyLineBetween": true,
                 "properties": [
                     "display",
                     "flex",
@@ -97,7 +102,6 @@
             {
                 "groupName": "box",
                 "emptyLineBefore": "always",
-                "noEmptyLineBetween": true,
                 "properties": [
                     "box-sizing",
                     "width",
@@ -170,7 +174,6 @@
             {
                 "groupName": "hide",
                 "emptyLineBefore": "always",
-                "noEmptyLineBetween": true,
                 "properties": [
                     "opacity",
                     "visibility"
