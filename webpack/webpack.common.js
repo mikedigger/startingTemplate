@@ -19,7 +19,7 @@ module.exports = {
 		path: path.resolve(__dirname, '../dist'),
 		filename: '[name].bundle.js',
 		assetModuleFilename: '[path][name][ext]',
-		clean: true,
+		// clean: true,
 	},
 	devtool: false,
 	plugins: [

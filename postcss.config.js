@@ -24,7 +24,5 @@
 // 			removeDuplicatedValues: true,
 // 		}),
 // 		require('autoprefixer'),
-// 		require('postcss-browser-reporter'),
-// 		require('postcss-flexbugs-fixes'),
 // 	],
 // };
